@@ -1,0 +1,60 @@
+name: LaTeX Integration Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-pdf-generation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+        
+    - name: Verify LaTeX installation
+      run: |
+        pdflatex --version
+        
+    - name: Test PDF generation
+      run: |
+        python3 generate_schedule.py
+        
+    - name: Verify PDF was created
+      run: |
+        if [ -f "Academic Schedule.pdf" ]; then
+          echo "PDF generated successfully!"
+          ls -lh "Academic Schedule.pdf"
+        else
+          echo "ERROR: PDF was not generated!"
+          exit 1
+        fi
+        
+    - name: Verify TEX was created
+      run: |
+        if [ -f "Academic Schedule.tex" ]; then
+          echo "LaTeX file generated successfully!"
+          wc -l "Academic Schedule.tex"
+        else
+          echo "ERROR: LaTeX file was not generated!"
+          exit 1
+        fi
+        
+    - name: Upload PDF artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: generated-schedule
+        path: Academic Schedule.pdf
+        retention-days: 7

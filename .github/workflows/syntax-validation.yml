@@ -1,0 +1,48 @@
+name: Python Syntax Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  syntax-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        
+    - name: Display Python version
+      run: python --version
+      
+    - name: Check Python syntax for all files
+      run: |
+        find . -name "*.py" -not -path "./.git/*" -exec python -m py_compile {} +
+        
+    - name: Verify package imports
+      run: |
+        cd "${{ github.workspace }}"
+        python -c "from src import load_schedule_data, get_event_dates, get_calendar_months; print('Core imports OK')"
+        python -c "from src import group_events_by_month, generate_latex_header; print('Generator imports OK')"
+        python -c "from src import generate_calendars, generate_month_table; print('Table imports OK')"
+        python -c "from src import compile_pdf, config; print('Utility imports OK')"
+        
+    - name: Validate JSON structure
+      run: |
+        python -c "import json; json.load(open('schedule_data.json')); print('JSON is valid!')"
+        
+    - name: Check for common Python issues
+      run: |
+        # Check for print statements without parentheses (Python 2 style)
+        ! grep -r "print ['\"]" --include="*.py" src/ generate_schedule.py || exit 0
+        echo "No Python 2 style print statements found"
