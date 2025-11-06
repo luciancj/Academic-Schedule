@@ -1,0 +1,288 @@
+{
+  "schedule_info": {
+    "title": "Academic Schedule",
+    "period": "November 2025 -- January 2026",
+    "start_date": "2025-11-01",
+    "end_date": "2026-01-31"
+  },
+  "subjects": {
+    "prog1": {
+      "name": "Basics of Programming 1",
+      "code": "BMEVIEEAA00",
+      "default_room": ""
+    },
+    "databases": {
+      "name": "Databases",
+      "code": "BMEVITMAB04",
+      "default_room": "R4K"
+    },
+    "prob_stats": {
+      "name": "Probability Theory and Statistics",
+      "code": "BMEVISZAB04",
+      "default_room": ""
+    },
+    "theory_comp": {
+      "name": "Introduction to Theory of Computing 1",
+      "code": "BMEVISZAA06",
+      "default_room": ""
+    },
+    "quantum": {
+      "name": "Introduction to Quantum Computing and Communication",
+      "code": "BMEVIHIAV06",
+      "default_room": ""
+    },
+    "economics": {
+      "name": "Micro- and Macroeconomics",
+      "code": "BMEGT30A001",
+      "default_room": ""
+    },
+    "business_law": {
+      "name": "Business Law",
+      "code": "BMEGT55A001",
+      "default_room": ""
+    },
+    "physics": {
+      "name": "Basics of Physics",
+      "code": "BMETE11AX52",
+      "default_room": "E1C"
+    },
+    "fashion": {
+      "name": "Fashion and the Psychology of Advertising",
+      "code": "BMEGT52V100",
+      "default_room": ""
+    },
+    "os": {
+      "name": "Operating Systems",
+      "code": "BMEVIMIAB03",
+      "default_room": ""
+    }
+  },
+  "events": [
+    {
+      "date": "2025-11-06",
+      "time": "23:59",
+      "subject": "prog1",
+      "type": "Homework 2 Submission",
+      "room": null
+    },
+    {
+      "date": "2025-11-06",
+      "time": "16:15",
+      "subject": "databases",
+      "type": "Laboratory SQL 2",
+      "room": null
+    },
+    {
+      "date": "2025-11-10",
+      "time": "8:00",
+      "subject": "prob_stats",
+      "type": "Retake Midterm",
+      "room": null
+    },
+    {
+      "date": "2025-11-14",
+      "time": "12:15",
+      "subject": "prog1",
+      "type": "Short Test 4",
+      "room": "404"
+    },
+    {
+      "date": "2025-11-17",
+      "time": "8:15",
+      "subject": "databases",
+      "type": "Midterm",
+      "room": null
+    },
+    {
+      "date": "2025-11-18",
+      "time": "18:00",
+      "subject": "theory_comp",
+      "type": "Retake Midterm 1",
+      "room": null
+    },
+    {
+      "date": "2025-11-18",
+      "time": "23:59",
+      "subject": "prog1",
+      "type": "Homework 3 Submission",
+      "room": null
+    },
+    {
+      "date": "2025-11-20",
+      "time": "16:15",
+      "subject": "databases",
+      "type": "Laboratory SQL 3",
+      "room": null
+    },
+    {
+      "date": "2025-11-21",
+      "time": "23:59",
+      "subject": "quantum",
+      "type": "Project Work",
+      "room": null
+    },
+    {
+      "date": "2025-11-21",
+      "time": "12:15",
+      "subject": "prog1",
+      "type": "Short Test 5",
+      "room": "404"
+    },
+    {
+      "date": "2025-11-30",
+      "time": "18:00",
+      "subject": "os",
+      "type": "Laboratory (Linux)",
+      "room": null
+    },
+    {
+      "date": "2025-12-01",
+      "time": "8:15",
+      "subject": "databases",
+      "type": "Retake Midterm 1",
+      "room": null
+    },
+    {
+      "date": "2025-12-01",
+      "time": "",
+      "subject": "economics",
+      "type": "Retake Midterm 1",
+      "room": null
+    },
+    {
+      "date": "2025-12-02",
+      "time": "18:00",
+      "subject": "theory_comp",
+      "type": "Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-03",
+      "time": "23:59",
+      "subject": "prog1",
+      "type": "Homework 4 (Final) Submission",
+      "room": null
+    },
+    {
+      "date": "2025-12-04",
+      "time": "14:00",
+      "subject": "physics",
+      "type": "Midterm",
+      "room": "Lab 1"
+    },
+    {
+      "date": "2025-12-05",
+      "time": "12:15",
+      "subject": "prog1",
+      "type": "Short Test 6",
+      "room": "404"
+    },
+    {
+      "date": "2025-12-08",
+      "time": "",
+      "subject": "economics",
+      "type": "Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-08",
+      "time": "",
+      "subject": "business_law",
+      "type": "Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-10",
+      "time": "",
+      "subject": "fashion",
+      "type": "Midterm 1",
+      "room": null
+    },
+    {
+      "date": "2025-12-10",
+      "time": "",
+      "subject": "fashion",
+      "type": "Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-11",
+      "time": "14:00",
+      "subject": "physics",
+      "type": "Retake Midterm",
+      "room": "Lab 1"
+    },
+    {
+      "date": "2025-12-11",
+      "time": "12:15",
+      "subject": "quantum",
+      "type": "Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-11",
+      "time": "18:00",
+      "subject": "os",
+      "type": "Midterm 1",
+      "room": null
+    },
+    {
+      "date": "2025-12-12",
+      "time": "",
+      "subject": "prog1",
+      "type": "Midterm 2",
+      "room": "404"
+    },
+    {
+      "date": "2025-12-15",
+      "time": "",
+      "subject": "prob_stats",
+      "type": "Second Retake Midterm",
+      "room": null
+    },
+    {
+      "date": "2025-12-15",
+      "time": "",
+      "subject": "theory_comp",
+      "type": "Retake Midterm 2",
+      "room": null
+    },
+    {
+      "date": "2025-12-18",
+      "time": "12:00",
+      "subject": "os",
+      "type": "Retake Midterm",
+      "room": null
+    },
+    {
+      "date": "2025-12-18",
+      "time": "12:15",
+      "subject": "quantum",
+      "type": "Retake Midterm 1&2",
+      "room": null
+    },
+    {
+      "date": "2026-01-05",
+      "time": "",
+      "subject": "theory_comp",
+      "type": "Second Retake Midterm",
+      "room": null
+    },
+    {
+      "date": "TBA",
+      "time": "",
+      "subject": "economics",
+      "type": "Exam",
+      "room": null,
+      "section": "Exam Period"
+    },
+    {
+      "date": "TBA",
+      "time": "",
+      "subject": "business_law",
+      "type": "Retake Midterm 1 (Retake Week)",
+      "room": null,
+      "section": "Exam Period"
+    }
+  ]
+}
