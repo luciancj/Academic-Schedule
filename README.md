@@ -1,7 +1,8 @@
 # Academic Schedule Generator
 
-[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/luciancj/Academic-Schedule/graphs/commit-activity) [![Release](https://img.shields.io/github/v/release/luciancj/Academic-Schedule)](https://github.com/luciancj/Academic-Schedule/releases) [![Code Quality](https://github.com/luciancj/Academic-Schedule/workflows/Code%20Quality/badge.svg)](https://github.com/luciancj/Academic-Schedule/actions) [![LaTeX Test](https://github.com/luciancj/Academic-Schedule/workflows/LaTeX%20Integration%20Test/badge.svg)](https://github.com/luciancj/Academic-Schedule/actions)
 
 ![Sample Output](media/Sample.png)
 
